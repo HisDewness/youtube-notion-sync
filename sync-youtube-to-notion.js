@@ -7,7 +7,7 @@
  * - Stores length in seconds
  */
 
-import fetch from "node-fetch";
+const fetch = require("node-fetch");
 
 const {
   NOTION_TOKEN,
