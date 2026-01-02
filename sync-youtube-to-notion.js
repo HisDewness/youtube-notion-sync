@@ -95,6 +95,12 @@ async function insertNotionRow(video) {
     },
     body: JSON.stringify({
       parent: { database_id: NOTION_DATABASE_ID },
+      
+      icon: {
+        type: "emoji",
+        emoji: "🎥"
+      },
+
       properties: {
         Name: {
           title: [{ text: { content: video.title } }]
